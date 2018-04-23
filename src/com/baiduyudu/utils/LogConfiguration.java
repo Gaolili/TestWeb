@@ -10,7 +10,7 @@ public class LogConfiguration {
         //获取到模块名字
         String founctionName =  fileName;
         //声明日志文件存储路径以及文件名、格式
-        final String logFilePath  = "./result/"+founctionName+".log";
+        final String logFilePath  = "./src/com/baiduyudu/result/"+founctionName+".log";
         Properties prop = new Properties();
         //配置日志输出的格式
         prop.setProperty("log4j.rootLogger","info, toConsole, toFile");

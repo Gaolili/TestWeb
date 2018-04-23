@@ -18,12 +18,12 @@ public class BaseParpare {
        LogConfiguration.initLog(this.getClass().getSimpleName());
        seleniumUtil = new SeleniumUtil();
        seleniumUtil.launchBrowser("firefox",context,"https://yuedu.baidu.com",10);
-       seleniumUtil.waitForPageLoading(20);
-      }
+       }
 
     @AfterClass
     public  void endTest(){
-        seleniumUtil.quit();
+
+//        seleniumUtil.quit();
     }
 
 

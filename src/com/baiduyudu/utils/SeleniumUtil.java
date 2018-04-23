@@ -36,8 +36,6 @@ public class SeleniumUtil {
             refresh();
             JavascriptExecutor js = (JavascriptExecutor)driver;
             String status= (String)js.executeScript("return document.readyState");
-
-
             logger.info("打印状态："+status);
         }
 

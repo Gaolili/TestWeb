@@ -9,8 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import utils.SeleniumUtil;
+import utils.StaticDataInfo;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * @Author:gaolili
@@ -33,22 +35,28 @@ public class HomePages {
     /**购物车*/
     public  By cartButton = By.className("ub-item ub-cart");
 
+    public  SeleniumUtil seleniumUtilHome = null;
+    public  static Logger logger = Logger.getLogger(HomePages.class.getName());
 
-    public void searchKeyWord(String keyword){
-        SeleniumUtil seleniumUtil = new SeleniumUtil();
+    public HomePages(SeleniumUtil seleniumutils){
+        seleniumUtilHome =  seleniumutils;
+    //        waitPageLoadFinish();
+    }
 
-        try {
-            Thread.sleep(3*60*60);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-//        seleniumUtil.waitForElementToLoad(10,searchWordField);
+    public void waitPageLoadFinish() {
+       logger.info("开始检查首页页面元素");
+       seleniumUtilHome.waitForElementToLoad(StaticDataInfo.timeout,loginButton);
+       seleniumUtilHome.waitForElementToLoad(StaticDataInfo.timeout,searcheButton);
+       logger.info("检查首页页面元素完毕");
+    }
 
-//        WebElement elementsss = seleniumUtil.driver.findElement(By.id("s-word-1"));
-//        elementsss.sendKeys(keyword);
-
-//        seleniumUtil.inputBy(searchWordField,keyword);
-        seleniumUtil.click(searcheButton);
+    public SearchResultPages searchKeyWord(String keyword){
+        logger.info("开始输入搜索信息");
+        seleniumUtilHome.clear(searchWordField);
+        seleniumUtilHome.inputBy(searchWordField,keyword);
+        logger.info("输入搜索信息完毕");
+        seleniumUtilHome.click(searcheButton);
+        return new SearchResultPages(seleniumUtilHome);
 
     }
 
