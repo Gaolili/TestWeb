@@ -1,6 +1,6 @@
-[2018-04-21 19:44:08] [INFO] maxWindowfirefox
-[2018-04-21 19:44:15] [INFO] 打开测试页面:[https://yuedu.baidu.com]
-[2018-04-21 19:46:26] [INFO] 清除元素 [By.id: s-word-1]上的内容
-[2018-04-21 19:46:27] [INFO] 输入：[中国] 到 [By.id: s-word-1]
-[2018-04-21 19:46:30] [INFO] 点击元素 [By.className: s-submit]
-[2018-04-21 19:46:45] [INFO] The element: [ class name: main-hd] is displayed
+[2018-04-24 22:00:14] [INFO] maxWindowfirefox
+[2018-04-24 22:00:22] [INFO] 打开测试页面:[https://yuedu.baidu.com]
+[2018-04-24 22:00:22] [INFO] 清除元素 [By.id: s-word-1]上的内容
+[2018-04-24 22:00:22] [INFO] 输入：[中国] 到 [By.id: s-word-1]
+[2018-04-24 22:00:28] [INFO] 点击元素 [By.className: s-submit]
+[2018-04-24 22:00:28] [INFO] The element: [ class name: main-hd] is displayed

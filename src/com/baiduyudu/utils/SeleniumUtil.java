@@ -42,6 +42,7 @@ public class SeleniumUtil {
     }
 
     public   WebDriver createDriver(String browserName) {
+        System.setProperty("webdriver.gecko.driver", "./src/com/baiduyudu/driver/geckodriver.exe");
         if (browserName.equalsIgnoreCase("chrome")){
             return new ChromeDriver();
 

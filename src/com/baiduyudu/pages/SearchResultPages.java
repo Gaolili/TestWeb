@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import sun.jvm.hotspot.utilities.Assert;
+//import sun.jvm.hotspot.utilities.Assert;
 import utils.SeleniumUtil;
 
 /**
