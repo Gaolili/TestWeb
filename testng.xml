@@ -2,10 +2,10 @@
 
 <suite name="test" parallel="true">
 
-    <test name="testhome" preserver-order="true">
+    <test name="testLogin" preserver-order="true">
 
         <classes>
-            <class name="testcases.testHomePage"/>
+            <class name="testcases.testLogin"/>
         </classes>
 
         <listeners>

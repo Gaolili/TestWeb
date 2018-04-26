@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="8.962">
+           time="1.617">
   <properties />
   
   
-            <testcase name="test_goin_Homeage" time="8.962" classname="testcases.testHomePage" />
+            <testcase name="test_goin_Homeage" time="1.617" classname="testcases.testHomePage" />
       
 </testsuite>

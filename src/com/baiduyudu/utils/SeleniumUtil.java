@@ -28,7 +28,7 @@ public class SeleniumUtil {
     public void launchBrowser(String browserName, ITestContext context, String webUrl, int timeOut) {
         driver = createDriver(browserName);
          try {
-            maxWindow(browserName);
+//            maxWindow(browserName);
             waitForPageLoading(timeOut);
             get(webUrl);
         } catch (TimeoutException e) {
