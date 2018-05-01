@@ -12,7 +12,7 @@
 <body>
 <h1>testLogin</h1>
 <p>
-  Test duration: 9.862s
+  Test duration: 31.456s
 </p>
 
 
@@ -25,26 +25,26 @@
             
 <tr>
   <td class="method">
-                  testUserNameLoginCase
+                  corretUserNameLogin
       </td>
   <td class="duration">
-    2.818s
+    21.010s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Failed to click element [By.className: tang-pass-footerBarULogin pass-link]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 超时!! 20 秒之后还没找到元素 [By.linkText: 文库新人]</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:85)<br />
-              utils.SeleniumUtil.click(SeleniumUtil.java:90)<br />
-              pages.LoginPages.inputUserNameLoginMethod(LoginPages.java:53)<br />
-              testcases.testLogin.testUserNameLoginCase(testLogin.java:14)<br />
+              org.testng.Assert.fail(Assert.java:96)<br />
+              utils.SeleniumUtil.waitForElementToLoad(SeleniumUtil.java:180)<br />
+              pages.LoginPages.isLoginSuccess(LoginPages.java:63)<br />
+              testcases.testLogin.corretUserNameLogin(testLogin.java:22)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
               org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
@@ -54,91 +54,49 @@
               java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
               java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
               java.lang.Thread.run(Thread.java:745)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.lang.Exception: org.openqa.selenium.NoSuchElementException: Unable to locate element: .tang\-pass\-footerBarULogin\ pass\-link<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;<br/>
-System info: host: &apos;DESKTOP-FH1HT1P&apos;, ip: &apos;192.168.31.155&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_11&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7288, moz:profile: C:\Users\19348\AppData\Loca..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}<br/>
-Session ID: d25db232-ff4f-40a8-8253-eb8b7b6237cd<br/>
-*** Element info: {Using=class name, value=tang-pass-footerBarULogin pass-link}</a><br />
-        <div class="stackTrace" id="exception-1">
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:102)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.click(SeleniumUtil.java:84)<br />
-                      pages.LoginPages.inputUserNameLoginMethod(LoginPages.java:53)<br />
-                      testcases.testLogin.testUserNameLoginCase(testLogin.java:14)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:483)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-                      java.lang.Thread.run(Thread.java:745)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: .tang\-pass\-footerBarULogin\ pass\-link<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;<br/>
-System info: host: &apos;DESKTOP-FH1HT1P&apos;, ip: &apos;192.168.31.155&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_11&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7288, moz:profile: C:\Users\19348\AppData\Loca..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}<br/>
-Session ID: d25db232-ff4f-40a8-8253-eb8b7b6237cd<br/>
-*** Element info: {Using=class name, value=tang-pass-footerBarULogin pass-link}</a><br />
-        <div class="stackTrace" id="exception-2">
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br />
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:457)<br />
-                      org.openqa.selenium.By$ByClassName.findElement(By.java:391)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-                      utils.SeleniumUtil.findElementBy(SeleniumUtil.java:71)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:98)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.clickTheClickable(SeleniumUtil.java:106)<br />
-                      utils.SeleniumUtil.click(SeleniumUtil.java:84)<br />
-                      pages.LoginPages.inputUserNameLoginMethod(LoginPages.java:53)<br />
-                      testcases.testLogin.testUserNameLoginCase(testLogin.java:14)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:483)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-                      java.lang.Thread.run(Thread.java:745)<br />
-                  </div>
-          </div>
+                </div>
       </td>
 </tr>
       </table>
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">testcases.testLogin</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  errorUserNameLoin
+      </td>
+  <td class="duration">
+    0.717s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"18310346495", "gao9212"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  errorUserNameLoin
+      </td>
+  <td class="duration">
+    0.676s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"1831034649", "gao921204"</span><br />
+    
+        
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>
